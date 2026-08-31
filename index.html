@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yogith Menda | Portfolio</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Canvas for Constellation Particles -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Header Navigation -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="logo">
+                <span class="logo-text">Yogith<span class="highlight">Menda</span></span>
+            </a>
+            <nav class="nav-links" id="nav-links">
+                <a href="#about" class="nav-link"><span class="nav-num">01.</span> About</a>
+                <a href="#skills" class="nav-link"><span class="nav-num">02.</span> Skills</a>
+                <a href="#education" class="nav-link"><span class="nav-num">03.</span> Education</a>
+                <a href="#projects" class="nav-link"><span class="nav-num">04.</span> Projects</a>
+                <a href="#highlights" class="nav-link"><span class="nav-num">05.</span> Highlights</a>
+                <a href="#contact" class="nav-link"><span class="nav-num">06.</span> Contact</a>
+            </nav>
+            <div class="hamburger" id="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-content">
+                <p class="hero-subtitle">Hi, I'm</p>
+                <h1 class="hero-title">Yogith Menda</h1>
+                <h2 class="hero-role">
+                    <span class="typing-text"></span><span class="cursor">&nbsp;</span>
+                </h2>
+                <p class="hero-description">
+                    Passionate tech enthusiast skilled in Python, C, and Web Automation. Dedicated to building secure web applications, solving complex problems, and exploring modern software engineering.
+                </p>
+                
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fa-solid fa-rocket"></i> View Projects
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <i class="fa-solid fa-paper-plane"></i> Get In Touch
+                    </a>
+                </div>
+
+                <div class="hero-socials">
+                    <a href="https://github.com/yogithmenda" target="_blank" rel="noopener noreferrer" class="social-icon" title="GitHub">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/yogith1165" target="_blank" rel="noopener noreferrer" class="social-icon" title="LinkedIn">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="mailto:yogithmenda@gmail.com" class="social-icon" title="Email">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                    <a href="#projects" class="social-icon" title="Code Projects">
+                        <i class="fa-solid fa-code"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="scroll-indicator">
+                <a href="#about" aria-label="Scroll down">
+                    <div class="mouse">
+                        <div class="wheel"></div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- 01. About Me Section -->
+        <section id="about" class="section">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="section-num">01.</span> About Me
+                </h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>
+                        Hello! I'm <strong class="text-gradient">Yogith Menda</strong>, a motivated developer with a strong foundation in computer science fundamentals, programming, and web technologies. I thrive on turning complex algorithms into practical, user-friendly solutions.
+                    </p>
+                    <p>
+                        My journey in technology is driven by <strong class="text-cyan">Deep Curiosity</strong> and <strong class="text-purple">Adaptability</strong>. Whether it's developing secure OAuth login flows, crafting interactive web utilities like scientific calculators, or writing Python web automation scripts, I enjoy diving deep into how systems work under the hood.
+                    </p>
+                    <p>
+                        I take pride in my <strong class="text-cyan">Problem Solving</strong> approach and my ability to work effectively in <strong class="text-purple">Team Collaboration</strong> environments to achieve ambitious goals.
+                    </p>
+
+                    <div class="about-badges">
+                        <span class="badge"><i class="fa-solid fa-code"></i> Python & C Developer</span>
+                        <span class="badge"><i class="fa-solid fa-shield-halved"></i> Security & OAuth</span>
+                        <span class="badge"><i class="fa-solid fa-brain"></i> Deep Curiosity</span>
+                        <span class="badge"><i class="fa-solid fa-users"></i> Team Collaborator</span>
+                    </div>
+                </div>
+
+                <div class="about-image-container">
+                    <div class="image-wrapper">
+                        <div class="avatar-card">
+                            <div class="avatar-img-wrapper">
+                                <img src="profile.jpg" alt="Yogith Menda" class="profile-img">
+                            </div>
+                            <h3 class="avatar-name">Yogith Menda</h3>
+                            <p class="avatar-title">Software & Web Developer</p>
+                            <div class="avatar-tags">
+                                <span>#Python</span>
+                                <span>#WebDev</span>
+                                <span>#Automation</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 02. Skills & Proficiency Section -->
+        <section id="skills" class="section">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="section-num">02.</span> Skills & Proficiency
+                </h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="skills-grid">
+                <!-- Card 1: Programming Languages -->
+                <div class="skills-card">
+                    <div class="card-header">
+                        <i class="fa-solid fa-code card-icon"></i>
+                        <h3>Programming & Web</h3>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span><i class="fa-brands fa-python"></i> Python</span>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span><i class="fa-solid fa-c"></i> C Language</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span><i class="fa-brands fa-html5"></i> HTML5 & CSS3</span>
+                                <span class="skill-percentage">92%</span>
+                            </div>
+                            <div class="progress-bar"><div class="progress" style="width: 92%;"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span><i class="fa-brands fa-js"></i> JavaScript (ES6+)</span>
+                                <span class="skill-percentage">88%</span>
+                            </div>
+                            <div class="progress-bar"><div class="progress" style="width: 88%;"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2: Database & Automation -->
+                <div class="skills-card">
+                    <div class="card-header">
+                        <i class="fa-solid fa-database card-icon"></i>
+                        <h3>Database & Automation</h3>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span><i class="fa-solid fa-server"></i> DBMS / SQL</span>
+                                <span class="skill-percentage">88%</span>
+                            </div>
+                            <div class="progress-bar"><div class="progress" style="width: 88%;"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span><i class="fa-solid fa-table"></i> MySQL</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span><i class="fa-solid fa-robot"></i> Web Automation</span>
+                                <span class="skill-percentage">87%</span>
+                            </div>
+                            <div class="progress-bar"><div class="progress" style="width: 87%;"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span><i class="fa-solid fa-plug"></i> REST API Integration</span>
+                                <span class="skill-percentage">84%</span>
+                            </div>
+                            <div class="progress-bar"><div class="progress" style="width: 84%;"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3: Tools & Soft Skills -->
+                <div class="skills-card">
+                    <div class="card-header">
+                        <i class="fa-solid fa-gears card-icon"></i>
+                        <h3>Tools & Core Strengths</h3>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span><i class="fa-brands fa-github"></i> GitHub & Git</span>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span><i class="fa-solid fa-laptop-code"></i> VSCode</span>
+                                <span class="skill-percentage">95%</span>
+                            </div>
+                            <div class="progress-bar"><div class="progress" style="width: 95%;"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span><i class="fa-solid fa-puzzle-piece"></i> Problem Solving</span>
+                                <span class="skill-percentage">92%</span>
+                            </div>
+                            <div class="progress-bar"><div class="progress" style="width: 92%;"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span><i class="fa-solid fa-arrows-spin"></i> Adaptability & Curiosity</span>
+                                <span class="skill-percentage">95%</span>
+                            </div>
+                            <div class="progress-bar"><div class="progress" style="width: 95%;"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 03. Education Section -->
+        <section id="education" class="section">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="section-num">03.</span> Education
+                </h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="education-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Secondary & Higher Secondary Education</h3>
+                            <span class="timeline-tag">Class 10th & 12th</span>
+                        </div>
+                        <h4 class="school-name"><i class="fa-solid fa-school"></i> St. Joseph's High School</h4>
+                        <p class="timeline-description">
+                            Completed Secondary (Class 10th) and Higher Secondary (Class 12th) education with strong academic focus on Mathematics, Science, Computer Fundamentals, and Analytical Reasoning. Developed foundational interest in computer programming and scientific problem solving.
+                        </p>
+                        <div class="edu-highlights">
+                            <span><i class="fa-solid fa-check"></i> High Academic Standing</span>
+                            <span><i class="fa-solid fa-check"></i> Computer Science Focus</span>
+                            <span><i class="fa-solid fa-check"></i> Active Participant in Tech Activities</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 04. Projects Section -->
+        <section id="projects" class="section">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="section-num">04.</span> Featured Projects
+                </h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1: Login and Authentication System -->
+                <div class="project-card">
+                    <div class="project-top">
+                        <div class="project-folder">
+                            <i class="fa-regular fa-folder-open"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/yogithmenda" target="_blank" rel="noopener noreferrer" title="View Source on GitHub">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <button class="icon-btn demo-btn-oauth" onclick="openOAuthDemoModal()" title="View OAuth Auth Flow Demo">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <h3 class="project-title">Login & Authentication System</h3>
+                    <p class="project-subtitle">GitHub OAuth Security & REST Session Management</p>
+
+                    <ul class="project-details">
+                        <li><i class="fa-solid fa-caret-right"></i> Developed a secure web-based login system integrating <strong>GitHub OAuth authentication</strong> for seamless user sign-in.</li>
+                        <li><i class="fa-solid fa-caret-right"></i> Implemented OAuth authorization flow to authenticate users through their GitHub accounts without storing GitHub passwords.</li>
+                        <li><i class="fa-solid fa-caret-right"></i> Designed responsive login and authentication interfaces using HTML5, CSS3, and JavaScript.</li>
+                        <li><i class="fa-solid fa-caret-right"></i> Integrated REST APIs to retrieve authenticated GitHub user information and manage login sessions.</li>
+                        <li><i class="fa-solid fa-caret-right"></i> Used Git and GitHub for version control, source-code management, and project collaboration.</li>
+                    </ul>
+
+                    <div class="project-tech-stack">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                        <span>GitHub OAuth API</span>
+                        <span>REST API</span>
+                        <span>Git</span>
+                    </div>
+
+                    <div class="project-action">
+                        <button class="btn btn-sm btn-outline" onclick="openOAuthDemoModal()">
+                            <i class="fa-solid fa-shield-halved"></i> Interactive Flow Demo
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Project 2: Scientific Calculator App -->
+                <div class="project-card">
+                    <div class="project-top">
+                        <div class="project-folder">
+                            <i class="fa-solid fa-calculator"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/yogithmenda" target="_blank" rel="noopener noreferrer" title="View Source on GitHub">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <button class="icon-btn demo-btn-calc" onclick="openCalculatorModal()" title="Launch Live Interactive Calculator">
+                                <i class="fa-solid fa-play"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <h3 class="project-title">Scientific Calculator App</h3>
+                    <p class="project-subtitle">Interactive Web-Based Scientific Calculator</p>
+
+                    <ul class="project-details">
+                        <li><i class="fa-solid fa-caret-right"></i> <strong>Basic Arithmetic:</strong> Handles addition (+), subtraction (-), multiplication (&times;), and division (&divide;).</li>
+                        <li><i class="fa-solid fa-caret-right"></i> <strong>Advanced Functions:</strong> Scientific models include trig (&sin;, &cos;, &tan;), logs ($\log_{10}$, $\ln$), exponents ($x^y$, $e^x$), and square roots ($\sqrt{x}$).</li>
+                        <li><i class="fa-solid fa-caret-right"></i> <strong>User Interface:</strong> Features a display screen and clickable buttons or a command-line scientific layout.</li>
+                        <li><i class="fa-solid fa-caret-right"></i> Built with pure HTML5, modern CSS3 styling, and JavaScript mathematical expression parsing engine.</li>
+                    </ul>
+
+                    <div class="project-tech-stack">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript (ES6)</span>
+                        <span>Math API</span>
+                        <span>UI/UX</span>
+                    </div>
+
+                    <div class="project-action">
+                        <button class="btn btn-sm btn-primary" onclick="openCalculatorModal()">
+                            <i class="fa-solid fa-calculator"></i> Launch Live Calculator App
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 05. Key Highlights Section -->
+        <section id="highlights" class="section">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="section-num">05.</span> Key Highlights & Stats
+                </h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="fa-solid fa-school"></i></div>
+                    <div class="stat-number">St. Joseph's</div>
+                    <div class="stat-label">Class 10th & 12th Graduate</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="fa-solid fa-code-commit"></i></div>
+                    <div class="stat-number">2+</div>
+                    <div class="stat-label">Full Core Projects</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                    <div class="stat-number">OAuth 2.0</div>
+                    <div class="stat-label">REST & Security Integration</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="fa-solid fa-lightbulb"></i></div>
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Deep Curiosity & Adaptability</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 06. Contact Section -->
+        <section id="contact" class="section">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="section-num">06.</span> Get In Touch
+                </h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3 class="contact-subtitle">Let's Connect</h3>
+                    <p class="contact-text">
+                        Whether you have a project idea, an opportunity to discuss, or just want to connect about Python, web automation, or development, my inbox is always open!
+                    </p>
+
+                    <div class="contact-links">
+                        <a href="mailto:yogithmenda@gmail.com" class="contact-item">
+                            <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                            <div class="contact-detail">
+                                <span class="contact-label">Email</span>
+                                <span class="contact-val">yogithmenda@gmail.com</span>
+                            </div>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/yogith1165" target="_blank" rel="noopener noreferrer" class="contact-item">
+                            <div class="contact-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+                            <div class="contact-detail">
+                                <span class="contact-label">LinkedIn</span>
+                                <span class="contact-val">linkedin.com/in/yogith1165</span>
+                            </div>
+                        </a>
+
+                        <a href="https://github.com/yogithmenda" target="_blank" rel="noopener noreferrer" class="contact-item">
+                            <div class="contact-icon"><i class="fa-brands fa-github"></i></div>
+                            <div class="contact-detail">
+                                <span class="contact-label">GitHub</span>
+                                <span class="contact-val">github.com/yogithmenda</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-form-card">
+                    <form id="contact-form" onsubmit="handleFormSubmit(event)">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" required placeholder="John Doe">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" required placeholder="john@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" rows="5" required placeholder="Hello Yogith..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">
+                            <span>Send Message</span> <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                    </form>
+                    <div id="form-feedback" class="form-feedback hidden">
+                        <i class="fa-solid fa-circle-check"></i> Thank you! Your message has been sent successfully.
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>Designed & Built by <span class="highlight">Yogith Menda</span></p>
+            <p class="footer-sub">&copy; 2026 Yogith Menda. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Interactive Calculator Modal -->
+    <div id="calc-modal" class="modal">
+        <div class="modal-overlay" onclick="closeCalculatorModal()"></div>
+        <div class="modal-content calc-modal-content">
+            <div class="modal-header">
+                <h3><i class="fa-solid fa-calculator text-cyan"></i> Scientific Calculator</h3>
+                <button class="close-btn" onclick="closeCalculatorModal()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="calculator-wrapper">
+                    <!-- Display -->
+                    <div class="calc-display-screen">
+                        <div id="calc-history" class="calc-history"></div>
+                        <div id="calc-current" class="calc-current">0</div>
+                    </div>
+                    <!-- Keypad -->
+                    <div class="calc-keypad">
+                        <!-- Row 1 Scientific -->
+                        <button class="calc-btn btn-func" onclick="calcFunc('sin')">sin</button>
+                        <button class="calc-btn btn-func" onclick="calcFunc('cos')">cos</button>
+                        <button class="calc-btn btn-func" onclick="calcFunc('tan')">tan</button>
+                        <button class="calc-btn btn-func" id="deg-rad-btn" onclick="toggleDegRad()">DEG</button>
+                        <button class="calc-btn btn-danger" onclick="calcClear()">AC</button>
+
+                        <!-- Row 2 Scientific -->
+                        <button class="calc-btn btn-func" onclick="calcFunc('log')">log</button>
+                        <button class="calc-btn btn-func" onclick="calcFunc('ln')">ln</button>
+                        <button class="calc-btn btn-func" onclick="calcFunc('sqrt')">&radic;</button>
+                        <button class="calc-btn btn-func" onclick="calcInput('^')">x^y</button>
+                        <button class="calc-btn btn-func" onclick="calcFunc('del')">&#9003;</button>
+
+                        <!-- Row 3 Numbers & Ops -->
+                        <button class="calc-btn btn-func" onclick="calcInput('(')">(</button>
+                        <button class="calc-btn btn-func" onclick="calcInput(')')">)</button>
+                        <button class="calc-btn btn-func" onclick="calcFunc('pi')">&pi;</button>
+                        <button class="calc-btn btn-func" onclick="calcFunc('e')">e</button>
+                        <button class="calc-btn btn-op" onclick="calcInput('/')">&divide;</button>
+
+                        <!-- Row 4 -->
+                        <button class="calc-btn btn-num" onclick="calcInput('7')">7</button>
+                        <button class="calc-btn btn-num" onclick="calcInput('8')">8</button>
+                        <button class="calc-btn btn-num" onclick="calcInput('9')">9</button>
+                        <button class="calc-btn btn-func" onclick="calcFunc('fact')">n!</button>
+                        <button class="calc-btn btn-op" onclick="calcInput('*')">&times;</button>
+
+                        <!-- Row 5 -->
+                        <button class="calc-btn btn-num" onclick="calcInput('4')">4</button>
+                        <button class="calc-btn btn-num" onclick="calcInput('5')">5</button>
+                        <button class="calc-btn btn-num" onclick="calcInput('6')">6</button>
+                        <button class="calc-btn btn-func" onclick="calcFunc('sqr')">x&sup2;</button>
+                        <button class="calc-btn btn-op" onclick="calcInput('-')">-</button>
+
+                        <!-- Row 6 -->
+                        <button class="calc-btn btn-num" onclick="calcInput('1')">1</button>
+                        <button class="calc-btn btn-num" onclick="calcInput('2')">2</button>
+                        <button class="calc-btn btn-num" onclick="calcInput('3')">3</button>
+                        <button class="calc-btn btn-op" onclick="calcInput('+')">+</button>
+                        <button class="calc-btn btn-action span-2" onclick="calcEqual()">=</button>
+
+                        <!-- Row 7 -->
+                        <button class="calc-btn btn-num span-2" onclick="calcInput('0')">0</button>
+                        <button class="calc-btn btn-num" onclick="calcInput('.')">.</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Interactive GitHub OAuth Flow Modal -->
+    <div id="oauth-modal" class="modal">
+        <div class="modal-overlay" onclick="closeOAuthDemoModal()"></div>
+        <div class="modal-content oauth-modal-content">
+            <div class="modal-header">
+                <h3><i class="fa-brands fa-github text-cyan"></i> GitHub OAuth Authorization Flow</h3>
+                <button class="close-btn" onclick="closeOAuthDemoModal()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="oauth-demo">
+                    <p class="oauth-desc">Experience how the GitHub OAuth 2.0 authentication flow works securely without storing passwords:</p>
+                    <div class="flow-steps">
+                        <div class="flow-step active" id="flow-step-1">
+                            <div class="step-badge">Step 1</div>
+                            <i class="fa-solid fa-desktop step-icon"></i>
+                            <h4>User Sign-In Request</h4>
+                            <p>Click "Sign in with GitHub" to initiate OAuth grant request.</p>
+                        </div>
+                        <div class="flow-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+                        <div class="flow-step" id="flow-step-2">
+                            <div class="step-badge">Step 2</div>
+                            <i class="fa-brands fa-github step-icon"></i>
+                            <h4>GitHub Authorization</h4>
+                            <p>User approves app permissions on official GitHub OAuth portal.</p>
+                        </div>
+                        <div class="flow-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+                        <div class="flow-step" id="flow-step-3">
+                            <div class="step-badge">Step 3</div>
+                            <i class="fa-solid fa-key step-icon"></i>
+                            <h4>Token & Profile Session</h4>
+                            <p>REST API exchanges authorization code for access token & user profile.</p>
+                        </div>
+                    </div>
+
+                    <div class="oauth-interactive-card">
+                        <div id="oauth-state-1">
+                            <button class="btn btn-github btn-block" onclick="nextOAuthStep(2)">
+                                <i class="fa-brands fa-github"></i> Simulate Sign in with GitHub
+                            </button>
+                        </div>
+                        <div id="oauth-state-2" class="hidden">
+                            <div class="github-prompt-box">
+                                <i class="fa-brands fa-github github-big"></i>
+                                <h4>Authorize Yogith's App</h4>
+                                <p>Requested scope: <code>user:email</code>, <code>read:user</code></p>
+                                <div class="prompt-actions">
+                                    <button class="btn btn-success" onclick="nextOAuthStep(3)">Authorize Application</button>
+                                    <button class="btn btn-secondary" onclick="resetOAuthDemo()">Cancel</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="oauth-state-3" class="hidden">
+                            <div class="profile-success-box">
+                                <i class="fa-solid fa-circle-check success-icon"></i>
+                                <h4>Authenticated Successfully!</h4>
+                                <div class="user-info-card">
+                                    <p><strong>Username:</strong> yogithmenda</p>
+                                    <p><strong>Status:</strong> Active OAuth Session</p>
+                                    <p><strong>Token Type:</strong> Bearer (Scoped)</p>
+                                </div>
+                                <button class="btn btn-outline" onclick="resetOAuthDemo()">Reset Demo</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS Script -->
+    <script src="script.js"></script>
+</body>
+</html>
